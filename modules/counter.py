@@ -1,4 +1,5 @@
 import cv2
+from modules.logger import log_event
 
 # Constants and state
 line_x = 208
@@ -25,11 +26,13 @@ def count_and_draw(tracks, frame):
             if prev_x < line_x and center_x >= line_x and direction != "entered":
                 enter_count += 1
                 counted_ids[track_id] = "entered"
+                log_event(track_id, "entered")
                 print(f"✅ ID_{track_id} ENTERED")
 
             elif prev_x > line_x and center_x <= line_x and direction != "exited":
                 exit_count += 1
                 counted_ids[track_id] = "exited"
+                log_event(track_id, "exited")
                 print(f"🔁 ID_{track_id} EXITED")
 
         tracked_ids[track_id] = center_x
