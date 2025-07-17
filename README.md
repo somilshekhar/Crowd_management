@@ -114,8 +114,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## 📸 Screenshots
 
-![Web Interface](https://via.placeholder.com/600x400.png?text=Web+Interface+Screenshot) <!-- Replace with actual screenshot -->
-![Alert System](https://via.placeholder.com/600x400.png?text=Alert+System+Screenshot) <!-- Replace with actual screenshot -->
+
 
 ---
 
